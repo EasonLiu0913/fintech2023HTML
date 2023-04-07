@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inline block 4px</title>
+    <style>
+        /* CSS RESET */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 16px;
+        }
+
+
+        .wrap {
+            font-size: 0;
+        }
+
+        /* 全域生效的 CSS 當手機*/
+        .inline-block {
+            display: inline-block;
+            width: 100%;
+            font-size: 16px;
+            vertical-align: top;
+            color: chartreuse;
+            padding: 5px;
+        }
+
+        /* RWD 響應式網頁設計*/
+
+        @media screen and (min-width:576px) {
+            .inline-block {
+                width: 50%;
+            }
+        }
+
+        @media screen and (min-width:768px) {
+            .inline-block {
+                width: 33.3333333%;
+            }
+        }
+
+        @media screen and (min-width:992px) {
+            .inline-block {
+                width: 25%;
+            }
+        }
+
+        .mycard {
+            /* min-height: 200px; */
+            background-color: brown;
+            /* border: 3px solid black; */
+
+            padding: 10px;
+        }
+
+        .mycard img {
+            width: 100%;
+            display: block;
+        }
+
+        .mycard span {
+            color: rgb(88, 186, 235);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+
+        <div class="inline-block">
+            <div class="mycard">
+                <img src="./imgs/pancakes-2291908_1280.jpg" alt="">
+                <h3>莓果鬆餅</h3>
+                <p>戶外<span>下午茶最值得推薦的點心</span> ，充滿奶香的鬆餅加上酸甜莓果，大人小孩看了都心動，若再配上咖啡跟美景就更完美。</p>
+            </div>
+        </div>
+
+        <div class="inline-block">
+            <div class="mycard">
+                <img src="./imgs/pancakes-2291908_1280.jpg" alt="">
+                <h3>莓果鬆餅</h3>
+                <p>戶外<span>下午茶最值得推薦的點心</span> ，充滿奶香的鬆餅加上酸甜莓果，大人小孩看了都心動，若再配上咖啡跟美景就更完美。</p>
+            </div>
+        </div>
+        <div class="inline-block">
+            <div class="mycard">
+                <img src="./imgs/pancakes-2291908_1280.jpg" alt="">
+                <h3>莓果鬆餅</h3>
+                <p>戶外<span>下午茶最值得推薦的點心</span> ，充滿奶香的鬆餅加上酸甜莓果，大人小孩看了都心動，若再配上咖啡跟美景就更完美。</p>
+            </div>
+        </div>
+        <div class="inline-block">
+            <div class="mycard">
+                <img src="./imgs/pancakes-2291908_1280.jpg" alt="">
+                <h3>莓果鬆餅</h3>
+                <p>戶外<span>下午茶最值得推薦的點心</span> ，充滿奶香的鬆餅加上酸甜莓果，大人小孩看了都心動，若再配上咖啡跟美景就更完美。</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
