@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex shrink</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .wrap{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .box{
+            width: 100%;
+            height: 200px;
+            border: 1px solid red;
+            flex-shrink: 1;
+        }
+
+        @media screen and (min-width:576px) {
+            .box{
+                width: 50%;
+            }
+        }
+
+        @media screen and (min-width:768px) {
+            .box{
+                width: 33.333333%;
+            }
+        }
+
+        @media screen and (min-width:992px) {
+            .box{
+                width: 25%;
+            }
+        }
+
+        .box:nth-child(1){
+            flex-shrink: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box">box1</div>
+        <!-- <div class="box">box2</div> -->
+        <div class="box">box3</div>
+        <!-- <div class="box">box4</div> -->
+        <div class="box">box5</div>
+        <div class="box">box6</div>
+        <div class="box">box7</div>
+        <div class="box">box8</div>
+        <div class="box">box9</div>
+        <div class="box">box10</div>
+        <div class="box">box11</div>
+        <div class="box">box12</div>
+    </div>
+</body>
+</html>
