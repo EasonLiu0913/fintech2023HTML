@@ -12,12 +12,12 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <style>
+        /* 全域 */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
 
         .container {
             width: 90%;
@@ -35,10 +35,27 @@
             border: 1px solid blue;
         }
 
+        /* HEADER 手機*/
+        header .col:nth-child(1){
+            display: flex;
+            align-items: center;
+        }
+
+        header .col:nth-child(1) button{
+            padding: 5px 10px;
+            background-color: rgb(235, 140, 23);
+            border: none;
+            border-radius: 5px;
+        }
+
+        header .col:nth-child(1) button i{
+            color: chartreuse;
+        }
+
         ul.nav-links {
             height: 100%;
             list-style: none;
-            display: flex;
+            display: none;
             align-items: center;
         }
 
@@ -65,23 +82,51 @@
             color: brown;
         }
 
-        nav ul{
+        .social-icons>i:nth-child(1),
+        .social-icons>i:nth-child(2) {
+            display: none;
+        }
+
+        /* HEADER 桌機 */
+        @media screen and (min-width:576px) {
+            header .col:nth-child(1) button{
+                display: none;
+            }
+
+            ul.nav-links {
+                display: flex;
+            }
+            
+            .social-icons>i:nth-child(1),
+            .social-icons>i:nth-child(2) {
+                display: inline-block;
+            }
+        }
+
+
+        /* NAV area */
+
+        nav ul {
             width: 100%;
             list-style: none;
             display: flex;
             justify-content: center;
         }
 
-        nav a{
+        nav a {
             color: black;
             text-decoration: none;
         }
 
-        nav li:nth-child(1) a, nav li:nth-child(2) a{
+        nav li:nth-child(1) a,
+        nav li:nth-child(2) a {
             border-right: 1px solid black;
             padding-right: 5px;
             margin-right: 5px;
         }
+
+
+        /* MAIN */
     </style>
 </head>
 
@@ -89,6 +134,11 @@
     <header>
         <div class="container">
             <div class="col">
+                <button>
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+
                 <ul class="nav-links">
                     <li><a href="#">Link1</a></li>
                     <li><a href="#">Link2</a></li>
@@ -126,6 +176,7 @@
     </nav>
 
 
+    <main></main>
 
 
 </body>
