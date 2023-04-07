@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alameda</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        .container {
+            width: 90%;
+            border: 1px solid red;
+            /* min-height: 100px; */
+            margin: auto;
+            display: flex;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .col {
+            width: 33.333333%;
+            /* min-height: 100px; */
+            border: 1px solid blue;
+        }
+
+        ul.nav-links {
+            height: 100%;
+            list-style: none;
+            display: flex;
+            align-items: center;
+        }
+
+        ul.nav-links a {
+            color: black;
+            text-decoration: none;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .social-icons {
+            height: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            /* border: 3px solid green; */
+        }
+
+        .social-icons>i {
+            margin-left: 10px;
+            font-size: 2rem;
+            color: brown;
+        }
+
+        nav ul{
+            width: 100%;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a{
+            color: black;
+            text-decoration: none;
+        }
+
+        nav li:nth-child(1) a, nav li:nth-child(2) a{
+            border-right: 1px solid black;
+            padding-right: 5px;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="col">
+                <ul class="nav-links">
+                    <li><a href="#">Link1</a></li>
+                    <li><a href="#">Link2</a></li>
+                    <li><a href="#">Link3</a></li>
+                    <li><a href="#">Link4</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h1>Alameda</h1>
+            </div>
+            <div class="col">
+                <div class="social-icons">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li>
+                    <a href="#">Tops</a>
+                </li>
+                <li>
+                    <a href="#">Bottoms</a>
+                </li>
+                <li>
+                    <a href="#">Sale</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+</body>
+
+</html>
